@@ -10,8 +10,10 @@ gui_h = cam_h;
 
 display_set_gui_size(gui_w,gui_h)
 
+randomize();
 timer = 90;
 alarm[0] = timer;
+
 
 
 

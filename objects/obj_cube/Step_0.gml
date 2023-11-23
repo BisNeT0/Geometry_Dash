@@ -20,6 +20,7 @@ if(place_meeting(x,y+vspd,obj_wall)){
 		y =y +sign(vspd);
 	}
 	vspd = 0;
+	
 }
 
 y = y+vspd;
