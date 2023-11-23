@@ -1,10 +1,8 @@
-spd = 5
+spd =5;
 hspd=0;
 vspd=0;
-grv=0;
-
-jump = false;
-
-vspeed = 0;
-hspeed = 0;
-gravity = 0.2;
+grv=1.0;
+jump = 30;
+cooldown = false
+vspd_clamp = 20;
+angle = 0;
