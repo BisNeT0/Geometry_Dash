@@ -21,6 +21,7 @@ y = y + vspd;
 if (keyboard_check_pressed(vk_up) && pulos < max_pulos) {
     vspd = -jump;
     pulos = pulos + 1;
+	audio_play_sound(snd_jump,4,false)
 }
 
 #endregion
@@ -41,11 +42,17 @@ if (place_meeting(x+hspd,y,obj_wall)){
 x = x+hspd;
 #endregion
 
+
 #region ROTAÇÃO
 angle = lerp(angle,-vspd*360,.9)
 #endregion
 
-
+#region MUSICA
+if (!sound_played) {
+    audio_play_sound(snd_intro,1,true)
+    sound_played = true;
+}
+#endregion
 
 
 

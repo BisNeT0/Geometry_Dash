@@ -1,4 +1,4 @@
-
+global.timer = 60
 global.score = 0;
 font_map = "0123456789";
 font = font_add_sprite_ext(spr_font,font_map,false,1);
@@ -11,8 +11,8 @@ gui_h = cam_h;
 display_set_gui_size(gui_w,gui_h)
 
 randomize();
-timer = 60;
-alarm[0] = timer;
+
+alarm[0] = global.timer;
 
 
 

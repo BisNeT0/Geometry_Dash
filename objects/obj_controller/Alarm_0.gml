@@ -13,7 +13,7 @@ coin.target = spike.id;
 
 #endregion
 
-alarm[0] = timer;
+alarm[0] = global.timer;
 
 
 

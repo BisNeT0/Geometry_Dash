@@ -6,5 +6,5 @@ jump = 29;
 angle = 0;
 pulos=0
 max_pulos = 2;
-
+sound_played = false
 
