@@ -1,5 +1,5 @@
 if(instance_exists(target)){
-	x = target.x+8
+	x = target.x+250
 }else{
 	instance_destroy();
 }

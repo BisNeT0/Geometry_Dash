@@ -4,28 +4,28 @@
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
 
-
 //PULO
-//if (jump == true and place_meeting(x,y,obj_floor)){
-//	vspeed =-15;
-//	gravity = 1;
-//	jump = false;
-//} 
+vspd = vspd + grv;
 
-//PULO
-vspd = vspd +grv;
-//vspd = clamp(vspd,-vspd_clamp,vspd_clamp);  --CONTROLAR PULO
-if(place_meeting(x,y+vspd,obj_wall)){
-	while(!place_meeting(x,y+sign(vspd),obj_wall)){
-		y =y +sign(vspd);
-	}
-	vspd = 0;
-	
+if (place_meeting(x, y + vspd, obj_wall)) {
+    while (!place_meeting(x, y + sign(vspd), obj_wall)) {
+        y = y + sign(vspd);
+    }
+    vspd = 0;
+    pulos = 0; 
 }
 
-y = y+vspd;
+y = y + vspd;
+
+
+if (keyboard_check_pressed(vk_up) && pulos < max_pulos) {
+    vspd = -jump;
+    pulos = pulos + 1;
+}
 
 #endregion
+
+
 #region MOVIMENTAÇÃO
 var move = key_right - key_left;
 hspd = move *spd
