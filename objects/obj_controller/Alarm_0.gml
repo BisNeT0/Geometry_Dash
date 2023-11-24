@@ -11,6 +11,7 @@ var coin = instance_create_layer(x1,spike.y - sprite_get_height(spr_coin)+76,"Ob
 coin.target = spike.id;
 
 
+
 #endregion
 
 alarm[0] = global.timer;

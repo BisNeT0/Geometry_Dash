@@ -13,6 +13,7 @@ display_set_gui_size(gui_w,gui_h)
 randomize();
 
 alarm[0] = global.timer;
+alarm[1] = global.timer
 
 
 

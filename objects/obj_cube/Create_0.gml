@@ -7,4 +7,5 @@ angle = 0;
 pulos=0
 max_pulos = 2;
 sound_played = false
-
+global.timer = 60
+//alarm[0] = global.timer
